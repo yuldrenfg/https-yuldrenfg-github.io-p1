@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procedimiento para Automatizar Planes de Trabajo con IA</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 25px;
+        }
+        h3 {
+            color: #2c3e50;
+        }
+        .step {
+            background: #e8f4fc;
+            padding: 15px;
+            border-left: 4px solid #3498db;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        .code-block {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            white-space: pre-wrap;
+            font-size: 0.9em;
+        }
+        .important {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        .success {
+            background: #d1ecf1;
+            border-left: 4px solid #17a2b8;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        .tip {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 0 5px 5px 0;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📋 Procedimiento Estándar para Automatizar Planes de Trabajo con IA</h1>
+
+        <div class="important">
+            <strong>🎯 Objetivo:</strong> Establecer un método unificado para generar automáticamente planes de trabajo mensuales utilizando Deepseek, basado en un sistema organizado de tareas, afectaciones y estructura de trabajo.
+        </div>
+
+        <h2>📁 Sistema de Organización de la Información</h2>
+
+        <h3>1. Documento Base: "Sistema de Trabajo"</h3>
+        <p>Cada trabajador debe mantener un documento estructurado exactamente como este modelo:</p>
+
+        <div class="code-block"># SISTEMA DE TRABAJO [NOMBRE DEL PROFESIONAL]
+
+## Día del mes en que da inicio la semana 1 [año]
+[Mes] [Año]: Día [X]
+[Continuar con todos los meses relevantes...]
+
+## SEMANA 1: [DESCRIPCIÓN DE ENFOQUE]
+**LUNES**
+*   Horario: Actividad específica
+*   Horario: Otra actividad
+
+**MARTES**
+*   Horario: Actividad específica
+
+[Repetir estructura para todos los días...]
+
+## SEMANA 2: [DESCRIPCIÓN DE ENFOQUE]
+[Misma estructura...]
+
+## SEMANA 3: [DESCRIPCIÓN DE ENFOQUE]
+[Incluir actividades externas si aplican]
+
+## SEMANA 4: [DESCRIPCIÓN DE ENFOQUE]
+[Misma estructura...]</div>
+
+        <div class="tip">
+            <strong>🔹 Instrucciones clave:</strong>
+            <ul>
+                <li><strong>Mantener la estructura original</strong> del documento sistema de trabajo</li>
+                <li><strong>Eliminar actividades que no correspondan</strong> a su perfil laboral</li>
+                <li><strong>Conservar solo las afectaciones</strong> que realmente impacten su trabajo</li>
+                <li><strong>Actualizar mensualmente</strong> las fechas de inicio de semana 1</li>
+                <li><strong>Especificar claramente</strong> horarios y periodicidad de actividades</li>
+            </ul>
+        </div>
+
+        <h3>2. Lista de Tareas Permanentes</h3>
+        <p>Documento separado para tareas recurrentes:</p>
+
+        <div class="code-block">· Tarea: [Descripción clara de la tarea] | Fecha: Permanente | Prioridad: [Alta/Media/Baja]
+· Tarea: [Otra tarea permanente] | Fecha: Permanente | Prioridad: [Alta/Media/Baja]</div>
+
+        <h3>3. Lista de Tareas y Afectaciones Específicas</h3>
+        <p>Documento para tareas con fechas límite y afectaciones calendarizadas:</p>
+
+        <div class="code-block">· Tarea: [Descripción específica] Fecha: YYYY-MM-DD | Prioridad: [Alta/Media/Baja]
+· Afectación: [Descripción del evento] Fecha y Hora: YYYY-MM-DD HH:MM am/pm
+· Tarea: [Otra tarea con fecha] Fecha: YYYY-MM-DD | Prioridad: [Alta/Media/Baja]</div>
+
+        <h2>🤖 Procedimiento con Deepseek</h2>
+
+        <div class="step">
+            <h3>Paso 1: Preparar la Información</h3>
+            <ul>
+                <li>Tener actualizados los tres documentos:
+                    <ul>
+                        <li><code>Sistema de trabajo.md</code> (adaptado a su perfil)</li>
+                        <li><code>Lista de tareas permanentes.md</code></li>
+                        <li><code>Lista de tareas y afectaciones.md</code></li>
+                    </ul>
+                </li>
+                <li>Confirmar que todas las actividades del sistema de trabajo reflejen su realidad laboral</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <h3>Paso 2: Ejecutar el Prompt en Deepseek</h3>
+            <p><strong>Copiar y pegar exactamente este mensaje:</strong></p>
+
+            <div class="code-block"># GENERADOR DE PLAN DE TRABAJO MENSUAL INTELIGENTE
+
+## Objetivo
+Crear un plan de trabajo mensual organizado que combine tareas generales y actividades calendarizadas, distribuyendo inteligentemente las tareas en los días disponibles según prioridad y complejidad.
+
+## Procesamiento de la Información
+
+### 1. Clasificación y Extracción Inteligente de Elementos
+Analiza todos los documentos proporcionados identificando:
+
+**TAREAS (cualquier formato de anotación):**
+- Elementos con checkbox `[ ]`, `[x]`, `-`, `*`, números, o cualquier marcador de lista
+- Textos que describan acciones a realizar, entregables o compromisos
+- Elementos que contengan fechas, plazos o indicadores temporales
+
+**AFECTACIONES (cualquier formato de anotación):**
+- Eventos con fechas y horarios específicos
+- Reuniones, citas, actividades con tiempo definido
+- Compromisos calendarizados explícitos o implícitos
+
+### 2. Sistema de Priorización y Análisis de Complejidad
+**ANÁLISIS DE PRIORIDAD POR CONTENIDO:**
+- **🔺 ALTA PRIORIDAD**: 
+  - Tareas con fechas límite próximas (dentro de 7 días)
+  - Tareas que contengan palabras clave: "urgente", "crítico", "importante", "prioritario", "esencial", "balance", "informe", "reporte", "entrega"
+  - Actividades vinculadas a objetivos estratégicos
+  - Entregables con stakeholders externos
+  - Tareas de reporte o balance oficial
+
+- **🔼 PRIORIDAD MEDIA**:
+  - Tareas con fechas límite en 8-15 días
+  - Actividades de preparación, planificación, organización
+  - Tareas recurrentes con impacto operativo
+  - Actividades de capacitación y desarrollo
+  - Tareas de seguimiento y monitoreo
+
+- **⏬ PRIORIDAD BAJA**:
+  - Tareas sin fechas definidas
+  - Actividades de mantenimiento, actualización permanente
+  - Tareas de optimización y mejora continua
+  - Actividades sin impacto inmediato en operaciones
+
+**ANÁLISIS DE COMPLEJIDAD Y DURACIÓN:**
+- **Alta complejidad**: Tareas que requieren concentración prolongada, investigación, análisis profundo (ej: elaboración de informes, balances, planificación estratégica)
+- **Media complejidad**: Tareas administrativas, preparación, organización (ej: documentación, actualizaciones, preparación de clases)
+- **Baja complejidad**: Tareas rutinarias, monitoreo, seguimiento (ej: correo, redes, actualizaciones sistemáticas)
+
+### 3. Distribución Inteligente de Tareas
+**ESTRATEGIA DE DISTRIBUCIÓN:**
+- **Tareas de alta prioridad**: Asignar en los primeros días disponibles, evitando días con múltiples afectaciones
+- **Tareas complejas**: Ubicar en días con menos interrupciones y afectaciones
+- **Tareas recurrentes**: Distribuir uniformemente a lo largo del mes
+- **Tareas relacionadas**: Agrupar en días consecutivos cuando sea beneficioso
+- **Balance de carga**: Evitar sobrecargar días y distribuir equitativamente
+
+**CRITERIOS DE ASIGNACIÓN:**
+- Considerar fechas límite para establecer orden de ejecución
+- Respetar dependencias entre tareas
+- Optimizar transiciones entre tipos de trabajo
+- Mantener flexibilidad para imprevistos
+
+### 4. Estructura del Plan de Trabajo
+
+**SECCIÓN A: LISTA DE TAREAS PRIORIZADAS INTELIGENTE**
+- Organizar automáticamente por prioridad calculada
+- Asignar iconos de prioridad basados en análisis de contenido
+- Incluir todas las fechas detectadas
+- Preservar formatos originales cuando sean claros
+- Agrupar por categorías detectadas (investigación, docencia, administración, etc.)
+
+**SECCIÓN B: CALENDARIO MENSUAL CON DISTRIBUCIÓN INTELIGENTE**
+- **INICIO INTELIGENTE**: Comenzar en la fecha de Semana 1 cuando esté definida, o en el primer día del mes
+- **DURACIÓN PRECISA**: Cubrir exactamente 4 semanas desde la fecha de inicio
+- **DISTRIBUCIÓN OPTIMIZADA**: Asignar tareas específicas a cada día según:
+  - Horarios disponibles después de afectaciones
+  - Complejidad de las tareas
+  - Prioridades y fechas límite
+  - Balance de carga de trabajo
+- **ACTIVIDADES ESTÁNDAR** (incluir automáticamente):
+  - Lunes a viernes: "Lectura de los Metrocontadores" a las 8:00 AM
+
+### 5. Sistema Avanzado de Detección de Conflictos
+
+**ANÁLISIS DE COMPATIBILIDAD:**
+- Detectar solapamientos de horario por proximidad temporal (mismo día + misma hora)
+- Identificar sobrecarga de días con múltiples actividades críticas
+- Señalar conflictos entre actividades de diferente naturaleza
+- Alertar sobre fechas límite concentradas
+
+**RESOLUCIÓN INTELIGENTE:**
+- Proponer redistribución basada en prioridades calculadas
+- Sugerir reprogramación considerando dependencias
+- Ofrecer alternativas de organización temporal
+
+### 6. Filtrado Contextual Avanzado
+- Interpretar condiciones temporales implícitas y explícitas
+- Aplicar filtros de mes actual automáticamente
+- Excluir elementos fuera del período relevante
+- Adaptar a sistemas de semanas, quincenas o meses completos
+- Considerar especificaciones estacionales ("solo en meses de...")
+
+## Validación de Información Indispensable
+
+### VERIFICACIÓN OBLIGATORIA PREVIA:
+Antes de generar cualquier plan, confirmar que se cuenta con:
+
+**✅ INFORMACIÓN MÍNIMA REQUERIDA:**
+1. **Mes y año de trabajo** - Definir el período específico
+2. **Nombre del profesional** - Identificar el responsable
+3. **Estructura temporal** - Una de las siguientes:
+   - Fecha de inicio de Semana 1, O
+   - Sistema de semanas definido, O
+   - Confirmación para usar primer día del mes como inicio
+
+**❌ ACCIÓN EN CASO DE FALTANTES:**
+Si falta información crítica:
+- **DETENER** la generación del plan
+- **SOLICITAR** específicamente los datos faltantes
+- **PROPORCIONAR** ejemplos claros del formato esperado
+- **ESPERAR** la información completa antes de proceder
+
+### MENSAJES DE SOLICITUD ESTÁNDAR:
+
+🚫 **INFORMACIÓN INCOMPLETA** - No puedo generar el plan
+
+**FALTAN DATOS CRÍTICOS:**
+• [Especificar qué información falta]
+• [Ejemplo del formato requerido]
+• [Pregunta específica para completar]
+
+Por favor, proporcione esta información para continuar.
+
+## Formato de Salida
+Generar un archivo Markdown (.md) completo con:
+- Encabezado identificativo con mes, año y profesional
+- Sección de tareas con priorización automática
+- Calendario con distribución inteligente de tareas específicas por día
+- Sección de observaciones con justificación de la distribución y recomendaciones
+- Formato claro y profesional
+
+## Parámetros de Configuración
+**Mes de trabajo:** [ESPECIFICAR MES Y AÑO]
+**Profesional:** [NOMBRE DEL PROFESIONAL]
+**Estructura temporal:** [FECHA INICIO SEMANA 1]
+
+## Documentos para Procesar
+[PEGAR AQUÍ EL CONTENIDO COMPLETO DE "Sistema de trabajo.md"]
+---
+[PEGAR AQUÍ EL CONTENIDO COMPLETO DE "Lista de tareas permanentes.md"]
+---
+[PEGAR AQUÍ EL CONTENIDO COMPLETO DE "Lista de tareas y afectaciones.md"]</div>
+        </div>
+
+        <div class="step">
+            <h3>Paso 3: Obtener y Revisar el Resultado</h3>
+            <ul>
+                <li>Deepseek generará un plan de trabajo completo en formato Markdown</li>
+                <li>Revisar que todas sus actividades estén incluidas correctamente</li>
+                <li>Verificar que las prioridades se hayan asignado adecuadamente</li>
+                <li>Ajustar manualmente si es necesario algún elemento específico</li>
+            </ul>
+        </div>
+
+        <h2>✅ Puntos Clave para el Éxito</h2>
+        <div class="success">
+            <ul>
+                <li><strong>Mantener los documentos actualizados</strong> semanalmente</li>
+                <li><strong>Usar formatos consistentes</strong> en todas las listas</li>
+                <li><strong>Especificar claramente</strong> prioridades y fechas límite</li>
+                <li><strong>Incluir solo actividades reales</strong> en el sistema de trabajo</li>
+                <li><strong>Ejecutar el procedimiento</strong> al inicio de cada mes</li>
+                <li><strong>Revisar y ajustar</strong> el plan generado según necesidades específicas</li>
+            </ul>
+        </div>
+
+        <div class="important" style="margin-top: 30px;">
+            <strong>💡 Conclusión:</strong> Este procedimiento garantiza planes de trabajo coherentes, priorizados y adaptados a la realidad de cada trabajador, optimizando el tiempo y mejorando la productividad.
+        </div>
+    </div>
+</body>
+</html>
